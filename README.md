@@ -1,7 +1,10 @@
 # Codomax Digital Solutions — AI & ML Internship
+
 ## AI & ML Internship Tasks
 
 This repository contains internship projects for Modules 01–05, covering Python fundamentals, data quality auditing, data analysis and visualization, machine learning fundamentals, and a local-first writing pattern analyzer.
+
+**HumanCheck — Task 5 live frontend:** [Open the deployed site](https://ranjiths112007.github.io/Codomax-Digital-Solutions-AI-ML-Internship-/)
 
 ## Task 1 — Introduction to AI & Python
 
@@ -27,6 +30,9 @@ This repository contains internship projects for Modules 01–05, covering Pytho
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+├── .github/
+│   └── workflows/
+│       └── deploy-humancheck.yml
 ├── Task-1/
 │   ├── README.md
 │   ├── ai_ml_dl_and_real_world_applications.md
@@ -34,15 +40,24 @@ This repository contains internship projects for Modules 01–05, covering Pytho
 │   ├── control_flow_and_lists.py
 │   ├── beginner_programs.py
 │   └── test_beginner_programs.py
-└── Task-2/
+├── Task-2/
+│   ├── README.md
+│   ├── expense_tracker.py
+│   └── test_expense_tracker.py
+├── Task-3/
+│   └── Module_03_Data_Analysis_Visualization.ipynb
+├── Task-4/
+│   └── Module_04_Machine_Learning_Fundamentals.ipynb
+└── Task-5/
     ├── README.md
-    ├── expense_tracker.py
-    └── test_expense_tracker.py
+    ├── backend/
+    └── frontend/
 ```
 
 ## Setup and run
 
 ### 1. Install Python
+
 Install Python 3.10 or newer from [python.org](https://www.python.org/downloads/). On Windows, enable **Add Python to PATH** during installation.
 
 Check the installation:
@@ -58,7 +73,7 @@ git clone https://github.com/ranjiths112007/Codomax-Digital-Solutions-AI-ML-Inte
 cd Codomax-Digital-Solutions-AI-ML-Internship-
 ```
 
-### 3. Run the programs
+### 3. Run Task 1 programs
 
 ```bash
 python Task-1/python_basics.py
@@ -66,9 +81,9 @@ python Task-1/control_flow_and_lists.py
 python Task-1/beginner_programs.py
 ```
 
-The programs use Python's standard library, so no external packages are required.
+The Task 1 programs use Python's standard library, so no external packages are required.
 
-### 4. Run the tests
+### 4. Run Task 1 tests
 
 From the repository root:
 
@@ -78,7 +93,7 @@ python -m unittest discover -s Task-1 -p "test_*.py"
 
 ## Task 2 — CSV Data Quality Auditor
 
-Checks a dataset for missing values, duplicate records and IDs, invalid email formats, and out-of-range ages. Run it with `python Task-2/data_quality_auditor.py`. The sample data includes deliberate issues so the report is visible. See [`Task-2/README.md`](Task-2/README.md) for the short instructions.
+Checks a dataset for missing values, duplicate records and IDs, invalid email formats, and out-of-range ages. Run it with `python Task-2/data_quality_auditor.py`. The sample data includes deliberate issues so the report is visible. See [Task 2 README](Task-2/README.md) for instructions.
 
 ## Task 3 — Data Analysis & Visualization
 
@@ -90,13 +105,17 @@ Trains and evaluates a Random Forest classifier on the Iris dataset using Scikit
 
 ## Task 5 — HumanCheck: Local Writing Pattern Analyzer
 
-A full-stack, API-key-free prototype with a React frontend and FastAPI backend. It uses a locally running Hugging Face text-classification model when available, plus sentence-level writing-pattern metrics and a clearly labelled heuristic fallback. It reports AI-like and human-like scores, explains visible writing cues, and includes responsible-use limitations.
+**[Launch the HumanCheck frontend](https://ranjiths112007.github.io/Codomax-Digital-Solutions-AI-ML-Internship-/)** · **[Read Task 5 documentation](Task-5/README.md)** · **[View Task 5 source](Task-5/)**
 
-- **Frontend:** `Task-5/frontend/` — responsive React + Vite application.
-- **Backend:** `Task-5/backend/` — FastAPI API, local model inference, metrics, fallback analysis, and tests.
-- **Run instructions:** See [Task 5 README](Task-5/README.md).
+HumanCheck is a full-stack prototype with a React + Vite frontend and a FastAPI backend. It estimates AI-like and human-like writing patterns, shows sentence-level cues, and explains its results.
 
-**Important:** These scores are not calibrated probabilities and cannot prove authorship. Do not use them as the sole basis for academic, employment, or disciplinary decisions. The model weights are downloaded and cached locally on first use; no paid inference API key is needed.
+- **Frontend:** `Task-5/frontend/` — responsive React application, deployed to GitHub Pages.
+- **Backend:** `Task-5/backend/` — FastAPI API, local model inference, writing-pattern metrics, fallback analysis, and tests.
+- **Model:** Hugging Face `openai-community/roberta-base-openai-detector`, downloaded and cached locally on first model-backed run.
+- **API key:** No paid inference API key is required.
+- **Deployment:** GitHub Actions builds and deploys the frontend. The backend is not hosted by GitHub Pages and must be deployed separately for hosted text analysis to work. See the Task 5 README for setup and deployment details.
+
+**Responsible use:** The displayed scores are not calibrated probabilities and cannot prove authorship. Human writing can be misclassified, and AI-generated writing can appear human. Do not use the tool as the sole basis for academic, employment, or disciplinary decisions.
 
 ## Key concepts
 
@@ -127,4 +146,5 @@ AI systems can make mistakes. Their outputs need appropriate testing and human o
 - [ ] Review and commit the completed work.
 
 ---
-**Note:** This repository documents learning exercises for Task 1. Make sure you understand and can explain the code before submitting it.
+
+**Note:** This repository documents learning exercises and internship tasks. Make sure you understand and can explain the code before submitting it.
