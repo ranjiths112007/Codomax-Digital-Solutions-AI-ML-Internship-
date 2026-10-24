@@ -71,6 +71,10 @@ From the repository root:
 python -m unittest discover -s Task-1 -p "test_*.py"
 ```
 
+## Task 2 — Python Mini Project
+
+The second task is a beginner-friendly Expense Tracker. It lets you add expenses, view saved records, and check spending by category. See [`Task-2/README.md`](Task-2/README.md) for setup instructions and details.
+
 ## Key concepts
 
 - **Artificial Intelligence (AI):** The broad field of building systems that perform tasks associated with human intelligence.
