@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+<title id="title">AgenticBI Local Data Intelligence</title><desc id="desc">Abstract data chart, analytics nodes, and local AI workflow banner.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1018"/><stop offset="1" stop-color="#1b2c3f"/></linearGradient><linearGradient id="lime" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b6f36a"/><stop offset="1" stop-color="#61d7bd"/></linearGradient></defs>
+<rect width="1200" height="300" rx="24" fill="url(#bg)"/>
+<g stroke="#b6f36a" stroke-opacity=".3" stroke-width="2"><path d="M820 70L930 110 1030 55 1110 120 1050 220 940 245 850 185 820 70M930 110L940 245M1030 55L1050 220M1110 120L940 245"/></g>
+<g fill="url(#lime)"><circle cx="820" cy="70" r="7"/><circle cx="930" cy="110" r="9"/><circle cx="1030" cy="55" r="8"/><circle cx="1110" cy="120" r="7"/><circle cx="1050" cy="220" r="9"/><circle cx="940" cy="245" r="7"/><circle cx="850" cy="185" r="8"/></g>
+<g fill="#b6f36a"><rect x="760" y="190" width="15" height="54" rx="4"/><rect x="786" y="160" width="15" height="84" rx="4"/><rect x="812" y="125" width="15" height="119" rx="4"/><rect x="838" y="145" width="15" height="99" rx="4"/></g>
+<text x="65" y="88" fill="#b6f36a" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="5">MODULE 06 · DATA INTELLIGENCE</text>
+<text x="62" y="153" fill="#f1f5f9" font-family="Arial,sans-serif" font-size="54" font-weight="700">AgenticBI</text>
+<text x="66" y="199" fill="#b3bfd0" font-family="Arial,sans-serif" font-size="23">Local CSV analysis. Evidence-backed findings.</text>
+<text x="66" y="231" fill="#b3bfd0" font-family="Arial,sans-serif" font-size="23">PowerPoint reports, without a paid inference API.</text>
+<rect x="66" y="255" width="290" height="4" rx="2" fill="url(#lime)"/>
+</svg>
