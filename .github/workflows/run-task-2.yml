@@ -1,4 +1,4 @@
-name: Run Expense Tracker
+name: Run CSV Data Quality Auditor
 
 on:
   push:
@@ -15,13 +15,13 @@ permissions:
   contents: read
 
 jobs:
-  run-and-test:
+  audit-and-test:
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: Task-2
     steps:
-      - name: Get repository code
+      - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -29,8 +29,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Run the Expense Tracker demo and show output
-        run: python demo_output.py
+      - name: Run sample data audit
+        run: python data_quality_auditor.py
 
       - name: Run unit tests
         run: python -m unittest -v
