@@ -76,9 +76,9 @@ From the repository root:
 python -m unittest discover -s Task-1 -p "test_*.py"
 ```
 
-## Task 2 — Python Mini Project
+## Task 2 — CSV Data Quality Auditor
 
-The second task is a beginner-friendly Expense Tracker. It lets you add expenses, view saved records, and check spending by category. See [`Task-2/README.md`](Task-2/README.md) for setup instructions and details.
+Checks a dataset for missing values, duplicate records and IDs, invalid email formats, and out-of-range ages. Run it with `python Task-2/data_quality_auditor.py`. The sample data includes deliberate issues so the report is visible. See [`Task-2/README.md`](Task-2/README.md) for the short instructions.
 
 ## Key concepts
 
