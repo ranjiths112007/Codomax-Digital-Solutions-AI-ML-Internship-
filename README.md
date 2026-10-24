@@ -1,84 +1,126 @@
-# Codomax Digital Solutions — AI & ML Internship
+<!-- Project banner -->
+<p align="center">
+  <img src="assets/codomax-ai-banner.svg" alt="Codomax AI and Machine Learning Internship Projects banner" width="100%" />
+</p>
 
-## AI & ML Internship Tasks
+<h1 align="center">Codomax Digital Solutions · AI & Machine Learning Internship</h1>
 
-This repository contains internship projects for Modules 01–06, covering Python fundamentals, data quality auditing, data analysis and visualization, machine learning fundamentals, a local-first writing pattern analyzer, and a local multi-agent data analyst with PowerPoint generation.
+<p align="center">
+  <strong>A hands-on portfolio covering Python, data quality, analytics, classical machine learning, local AI applications, and agentic data workflows.</strong>
+</p>
 
-**HumanCheck — Task 5 live frontend:** [Open the deployed site](https://ranjiths112007.github.io/Codomax-Digital-Solutions-AI-ML-Internship-/)
+<p align="center">
+  <a href="https://github.com/ranjiths112007/Codomax-Digital-Solutions-AI-ML-Internship-/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/ranjiths112007/Codomax-Digital-Solutions-AI-ML-Internship-?style=for-the-badge&color=7cdb9b"></a>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img alt="AI and ML" src="https://img.shields.io/badge/Focus-AI%20%2F%20ML-8B5CF6?style=for-the-badge">
+  <img alt="Projects" src="https://img.shields.io/badge/Projects-06%20documented-0EA5E9?style=for-the-badge">
+</p>
 
-## Task 1 — Introduction to AI & Python
+<p align="center">
+  <a href="#project-roadmap">Explore projects</a> ·
+  <a href="#getting-started">Getting started</a> ·
+  <a href="#technology-landscape">Technology landscape</a>
+</p>
 
-### Objectives covered
-1. Learn the basics of Artificial Intelligence and Machine Learning.
-2. Understand the difference between AI, ML, and Deep Learning.
-3. Explore real-world AI applications.
-4. Install Python and practise variables, loops, functions, and lists.
-5. Write beginner-friendly Python programs.
+---
 
-### Task contents
+## Overview
 
-- **AI, ML, and Deep Learning notes:** Definitions, differences, relationships, real-world examples, key terms, and review questions.
-- **Python basics:** Variables, data types, operators, type conversion, lists, and functions.
-- **Control flow and collections:** Conditions, `for` and `while` loops, list operations, list comprehensions, and simple calculations.
-- **Beginner Python programs:** Even/odd checker, multiplication table, factorial, palindrome checker, calculator, and list statistics.
-- **Tests:** Basic unit tests for the beginner practice programs.
+This repository documents practical projects built during an AI & ML internship learning path. The work progresses from Python programming and data preparation to exploratory analytics, supervised learning, a local writing-pattern analysis prototype, and a CSV-to-PowerPoint analytics application.
 
-## Repository structure
+The goal is to keep the code, experiments, limitations, and setup instructions together so each project can be reviewed and run independently.
 
-```text
-.
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── .github/
-│   └── workflows/
-│       └── deploy-humancheck.yml
-├── Task-1/
-│   ├── README.md
-│   ├── ai_ml_dl_and_real_world_applications.md
-│   ├── python_basics.py
-│   ├── control_flow_and_lists.py
-│   ├── beginner_programs.py
-│   └── test_beginner_programs.py
-├── Task-2/
-│   ├── README.md
-│   ├── expense_tracker.py
-│   └── test_expense_tracker.py
-├── Task-3/
-│   └── Module_03_Data_Analysis_Visualization.ipynb
-├── Task-4/
-│   └── Module_04_Machine_Learning_Fundamentals.ipynb
-├── Task-5/
-    ├── README.md
-    ├── backend/
-    └── frontend/
-└── Task-6/
-    └── AgenticBI/
-        ├── README.md
-        ├── backend/
-        └── frontend/
+> **Project integrity note:** Documentation distinguishes implemented features from optional integrations and future extensions. A model is not described as trained, fine-tuned, or evaluated unless that work is actually present in the project.
+
+## Project roadmap
+
+| Module | Project | Main concepts | Status / entry point |
+|---|---|---|---|
+| 01 | **AI & Python Foundations** | AI vs. ML vs. deep learning, Python syntax, control flow, functions, collections, unit testing | [Open Task 1](Task-1/README.md) |
+| 02 | **CSV Data Quality Auditor / Expense Tracker** | Data validation, missing values, duplicate detection, identifiers, input validation, file handling | [Open Task 2](Task-2/README.md) |
+| 03 | **Data Analysis & Visualization** | Pandas, NumPy, exploratory data analysis (EDA), aggregation, charting with Matplotlib | [Open notebook](Task-3/Module_03_Data_Analysis_Visualization.ipynb) |
+| 04 | **Machine Learning Fundamentals** | Iris classification, train/test split, Random Forest, classification metrics, confusion matrix | [Open notebook](Task-4/Module_04_Machine_Learning_Fundamentals.ipynb) |
+| 05 | **HumanCheck — Writing Pattern Analyzer** | React, Vite, FastAPI, local Hugging Face inference, heuristic features, API integration | [Docs](Task-5/README.md) · [Source](Task-5/) · [Live frontend](https://ranjiths112007.github.io/Codomax-Digital-Solutions-AI-ML-Internship-/) |
+| 06 | **AgenticBI — Local CSV Analyst & PPT Builder** | Pandas profiling, statistical summaries, Isolation Forest, optional local LLM narration, REST APIs, PowerPoint generation | [Docs](Task-6/AgenticBI/README.md) · [Source](Task-6/AgenticBI/) |
+
+### How the projects build on one another
+
+```mermaid
+flowchart LR
+    A["01 · Python foundations"] --> B["02 · Data validation"]
+    B --> C["03 · Exploratory analysis"]
+    C --> D["04 · Classical ML"]
+    D --> E["05 · Local AI web app"]
+    E --> F["06 · AgenticBI analytics workflow"]
+    style A fill:#172554,stroke:#60a5fa,color:#fff
+    style B fill:#172554,stroke:#60a5fa,color:#fff
+    style C fill:#172554,stroke:#60a5fa,color:#fff
+    style D fill:#172554,stroke:#60a5fa,color:#fff
+    style E fill:#312e81,stroke:#a78bfa,color:#fff
+    style F fill:#14532d,stroke:#86efac,color:#fff
 ```
 
-## Setup and run
+## Featured projects
 
-### 1. Install Python
+### HumanCheck · Local writing-pattern analysis
 
-Install Python 3.10 or newer from [python.org](https://www.python.org/downloads/). On Windows, enable **Add Python to PATH** during installation.
+HumanCheck is a full-stack prototype that analyses text using a locally available detector model when configured, alongside writing-pattern metrics and fallback analysis.
 
-Check the installation:
+- **Frontend:** React + Vite.
+- **Backend:** FastAPI.
+- **Model integration:** `openai-community/roberta-base-openai-detector` is configured for local inference and can be cached on first model-backed run.
+- **Deployment:** The frontend is published through GitHub Pages; a separately hosted backend is needed for deployed end-to-end analysis.
+- **Important limitation:** detector output is not proof of authorship and should never be the sole basis for academic or employment decisions.
 
-```bash
-python --version
-```
+Links: [Live frontend](https://ranjiths112007.github.io/Codomax-Digital-Solutions-AI-ML-Internship-/) · [Task 5 README](Task-5/README.md)
 
-### 2. Clone this repository
+### AgenticBI · Local CSV analyst and PowerPoint builder
+
+AgenticBI combines deterministic data analysis with an optional local language model to create a concise, presentation-ready report from a CSV file.
+
+- **Data engineering:** CSV parsing, schema inspection, missing-value and duplicate checks.
+- **Statistical analysis:** descriptive statistics and categorical frequency summaries.
+- **Anomaly detection:** Isolation Forest flags potentially unusual rows for human review.
+- **LLM integration:** optional Ollama narration based on already-computed findings.
+- **Reporting:** PowerPoint generation with `python-pptx` and chart generation with Matplotlib.
+- **Application layer:** FastAPI endpoints and a React/Vite upload interface.
+- **Safety design:** the model does not generate or execute analysis code; Python functions calculate the metrics.
+
+Links: [Task 6 README](Task-6/AgenticBI/README.md) · [Backend](Task-6/AgenticBI/backend/) · [Frontend](Task-6/AgenticBI/frontend/)
+
+## Technology landscape
+
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white">
+  <img alt="NumPy" src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white">
+  <img alt="Scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white">
+  <img alt="Matplotlib" src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square">
+  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white">
+  <img alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB">
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white">
+  <img alt="Ollama" src="https://img.shields.io/badge/Ollama-111111?style=flat-square">
+</p>
+
+The technologies above are used across different modules; not every project depends on every library.
+
+## Getting started
+
+### Prerequisites
+
+- Python 3.10 or newer.
+- Git.
+- Node.js 18+ and npm for the React applications in Task 5 and Task 6.
+- Ollama only if you want to enable AgenticBI's optional local LLM summary.
+
+### Clone the repository
 
 ```bash
 git clone https://github.com/ranjiths112007/Codomax-Digital-Solutions-AI-ML-Internship-.git
 cd Codomax-Digital-Solutions-AI-ML-Internship-
 ```
 
-### 3. Run Task 1 programs
+### Run Python foundations
 
 ```bash
 python Task-1/python_basics.py
@@ -86,83 +128,119 @@ python Task-1/control_flow_and_lists.py
 python Task-1/beginner_programs.py
 ```
 
-The Task 1 programs use Python's standard library, so no external packages are required.
-
-### 4. Run Task 1 tests
-
-From the repository root:
+Run Task 1 unit tests:
 
 ```bash
 python -m unittest discover -s Task-1 -p "test_*.py"
 ```
 
-## Task 2 — CSV Data Quality Auditor
+### Run the AgenticBI application
 
-Checks a dataset for missing values, duplicate records and IDs, invalid email formats, and out-of-range ages. Run it with `python Task-2/data_quality_auditor.py`. The sample data includes deliberate issues so the report is visible. See [Task 2 README](Task-2/README.md) for instructions.
+**Terminal 1 — backend**
 
-## Task 3 — Data Analysis & Visualization
+```bash
+cd Task-6/AgenticBI/backend
+python -m venv .venv
+```
 
-Uses Pandas and NumPy to explore and clean sample sales data, calculate revenue summaries, and create bar, line, and pie charts with Matplotlib. Open `Task-3/Module_03_Data_Analysis_Visualization.ipynb` in Google Colab and run all cells.
+Activate the virtual environment:
 
-## Task 4 — Machine Learning Fundamentals
+```powershell
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+```
 
-Trains and evaluates a Random Forest classifier on the Iris dataset using Scikit-learn. Includes a train/test split, accuracy, classification report, confusion matrix, and a new-flower prediction. Open `Task-4/Module_04_Machine_Learning_Fundamentals.ipynb` in Google Colab and run all cells.
+```bash
+# macOS / Linux
+source .venv/bin/activate
+```
 
-## Task 5 — HumanCheck: Local Writing Pattern Analyzer
+Install dependencies and launch the API:
 
-**[Launch the HumanCheck frontend](https://ranjiths112007.github.io/Codomax-Digital-Solutions-AI-ML-Internship-/)** · **[Read Task 5 documentation](Task-5/README.md)** · **[View Task 5 source](Task-5/)**
+```bash
+pip install -r requirements.txt
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+```
 
-HumanCheck is a full-stack prototype with a React + Vite frontend and a FastAPI backend. It estimates AI-like and human-like writing patterns, shows sentence-level cues, and explains its results.
+**Terminal 2 — frontend**
 
-- **Frontend:** `Task-5/frontend/` — responsive React application, deployed to GitHub Pages.
-- **Backend:** `Task-5/backend/` — FastAPI API, local model inference, writing-pattern metrics, fallback analysis, and tests.
-- **Model:** Hugging Face `openai-community/roberta-base-openai-detector`, downloaded and cached locally on first model-backed run.
-- **API key:** No paid inference API key is required.
-- **Deployment:** GitHub Actions builds and deploys the frontend. The backend is not hosted by GitHub Pages and must be deployed separately for hosted text analysis to work. See the Task 5 README for setup and deployment details.
+```bash
+cd Task-6/AgenticBI/frontend
+npm install
+npm run dev
+```
 
-**Responsible use:** The displayed scores are not calibrated probabilities and cannot prove authorship. Human writing can be misclassified, and AI-generated writing can appear human. Do not use the tool as the sole basis for academic, employment, or disciplinary decisions.
+Open the local URL printed by Vite. The API's interactive documentation is available at `http://127.0.0.1:8000/docs`.
 
-## Task 6 — AgenticBI: Local Multi-Agent Analyst & PPT Builder
+**Optional local model**
 
-**[Read Task 6 documentation](Task-6/AgenticBI/README.md)** · **[View Task 6 source](Task-6/AgenticBI/)**
+```bash
+ollama pull qwen2.5:7b
+```
 
-AgenticBI analyses local CSV files, profiles data quality, computes evidence-backed statistics, optionally uses a local Ollama model to phrase findings, detects potential anomalies, and generates a styled PowerPoint report.
+AgenticBI's statistical workflow does not require Ollama; the local model is only used to phrase a summary of calculated findings.
 
-- **Backend:** `Task-6/AgenticBI/backend/` — FastAPI, Pandas, Scikit-learn, Ollama integration, and PowerPoint generation.
-- **Frontend:** `Task-6/AgenticBI/frontend/` — React + Vite interface.
-- **Local-first:** no paid inference API is required. Ollama is optional; deterministic analysis works without it.
-- **Safety:** the app does not execute LLM-generated code. Anomaly flags are investigation leads, not proof of fraud or errors.
+## Repository structure
 
-See the Task 6 README for setup instructions and API endpoints.
+```text
+.
+├── assets/
+│   └── codomax-ai-banner.svg
+├── .github/workflows/
+│   └── deploy-humancheck.yml
+├── Task-1/                         # AI concepts and Python foundations
+├── Task-2/                         # Data quality / Python practice
+├── Task-3/                         # EDA and visualization notebook
+├── Task-4/                         # Iris classification notebook
+├── Task-5/                         # HumanCheck full-stack prototype
+│   ├── backend/
+│   └── frontend/
+└── Task-6/AgenticBI/               # Local CSV analysis and PPTX builder
+    ├── backend/
+    │   ├── app/
+    │   ├── sample_data/
+    │   └── tests/
+    └── frontend/
+```
 
-## Key concepts
+## AI/ML concepts represented in this repository
 
-- **Artificial Intelligence (AI):** The broad field of building systems that perform tasks associated with human intelligence.
-- **Machine Learning (ML):** A subset of AI where models learn patterns from data.
-- **Deep Learning (DL):** A subset of ML that uses neural networks with multiple layers.
+- **Exploratory Data Analysis (EDA):** understanding distributions, missingness, categories, and numeric relationships before modelling.
+- **Supervised classification:** learning a mapping from labelled examples to classes; Task 4 uses a Random Forest on the Iris dataset.
+- **Model evaluation:** using a holdout set, accuracy, a classification report, and a confusion matrix to inspect model performance.
+- **Inference:** passing new inputs to an already available model to obtain predictions or scores; inference is different from training.
+- **Local LLM integration:** calling a model served on the developer's machine through Ollama; this is not the same as fine-tuning the model.
+- **Anomaly detection:** using Isolation Forest to surface records that differ from the broader numeric pattern; flags need domain review.
+- **REST API design:** exposing backend functionality through HTTP endpoints that a frontend can call.
+- **Reproducibility:** keeping sample data, requirements, notebooks, and tests alongside implementation code.
 
-In general, **Deep Learning ⊂ Machine Learning ⊂ Artificial Intelligence**. Not every AI system uses machine learning, and not every ML model uses deep learning.
+**Not claimed unless separately implemented:** training Word2Vec embeddings, fine-tuning transformer weights, building a knowledge graph, or training a custom LLM. These are valuable future learning directions, but they are not described as completed work in this repository.
 
-## Real-world applications
+## Limitations and responsible use
 
-- Healthcare: image analysis support and clinical-data pattern detection.
-- Finance: fraud detection and risk modelling.
-- Transportation: route prediction and driver-assistance systems.
-- Retail: recommendations and demand forecasting.
-- Agriculture: crop monitoring and possible plant-disease detection.
-- Language: translation, speech recognition, summarisation, and question answering.
+- A model score is not automatically a calibrated probability or a ground-truth label.
+- Synthetic sample data is useful for demos but cannot establish real-world business performance.
+- Anomaly detection identifies candidates for investigation, not confirmed fraud, errors, or root causes.
+- Optional LLM-generated prose can be incomplete or incorrect; computed metrics should remain the source of truth.
+- Verify setup commands and model availability on the target machine before presenting a live demo.
 
-AI systems can make mistakes. Their outputs need appropriate testing and human oversight, with attention to privacy, fairness, and safety.
+## Roadmap
 
-## Task 1 checklist
+- [ ] Add screenshots from real local runs of HumanCheck and AgenticBI.
+- [ ] Run and record automated tests for each Python backend.
+- [ ] Add input validation and error-handling tests for CSV edge cases.
+- [ ] Record a short demo showing CSV upload, findings, and PPTX export.
+- [ ] Document additional internship tasks once their actual briefs and implementations are available.
 
-- [ ] Review the AI, ML, and Deep Learning notes.
-- [ ] Install Python and verify the installation.
-- [ ] Run each Python example.
-- [ ] Modify the examples and understand the output.
-- [ ] Run the unit tests.
-- [ ] Review and commit the completed work.
+## Author
+
+**Ranjith Sivashanmugam** · AI & ML project portfolio
+
+- GitHub: [@ranjiths112007](https://github.com/ranjiths112007)
+- LinkedIn: [Connect on LinkedIn](https://www.linkedin.com/in/ranjith-sivashanmugam/)
 
 ---
 
-**Note:** This repository documents learning exercises and internship tasks. Make sure you understand and can explain the code before submitting it.
+<p align="center">
+  <sub>Built as a learning portfolio. Implementation status and limitations are documented alongside the code.</sub>
+</p>
