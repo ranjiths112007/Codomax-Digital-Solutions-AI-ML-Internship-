@@ -18,7 +18,7 @@ This repository contains the work for **Task 1: Introduction to AI & Python**, c
 - **Python basics:** Variables, data types, operators, type conversion, lists, and functions.
 - **Control flow and collections:** Conditions, `for` and `while` loops, list operations, list comprehensions, and simple calculations.
 - **Beginner Python programs:** Even/odd checker, multiplication table, factorial, palindrome checker, calculator, and list statistics.
-- **Tests:** Basic unit tests for the Day 4 practice programs.
+- **Tests:** Basic unit tests for the beginner practice programs.
 
 ## Repository structure
 
