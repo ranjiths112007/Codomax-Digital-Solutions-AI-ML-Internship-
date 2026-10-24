@@ -1,7 +1,7 @@
 # Codomax Digital Solutions — AI & ML Internship
 ## AI & ML Internship Tasks
 
-This repository contains the work for **Task 1: Introduction to AI & Python**, covering the objectives provided for the first module.
+This repository contains internship projects for Modules 01–04, including Python fundamentals, data quality auditing, data analysis and visualization, and machine learning fundamentals.
 
 ## Task 1 — Introduction to AI & Python
 
@@ -79,6 +79,14 @@ python -m unittest discover -s Task-1 -p "test_*.py"
 ## Task 2 — CSV Data Quality Auditor
 
 Checks a dataset for missing values, duplicate records and IDs, invalid email formats, and out-of-range ages. Run it with `python Task-2/data_quality_auditor.py`. The sample data includes deliberate issues so the report is visible. See [`Task-2/README.md`](Task-2/README.md) for the short instructions.
+
+## Task 3 — Data Analysis & Visualization
+
+Uses Pandas and NumPy to explore and clean sample sales data, calculate revenue summaries, and create bar, line, and pie charts with Matplotlib. Open `Task-3/Module_03_Data_Analysis_Visualization.ipynb` in Google Colab and run all cells.
+
+## Task 4 — Machine Learning Fundamentals
+
+Trains and evaluates a Random Forest classifier on the Iris dataset using Scikit-learn. Includes a train/test split, accuracy, classification report, confusion matrix, and a new-flower prediction. Open `Task-4/Module_04_Machine_Learning_Fundamentals.ipynb` in Google Colab and run all cells.
 
 ## Key concepts
 
