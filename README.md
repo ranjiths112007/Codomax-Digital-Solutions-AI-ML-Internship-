@@ -1,7 +1,7 @@
 # Codomax Digital Solutions — AI & ML Internship
 ## AI & ML Internship Tasks
 
-This repository contains internship projects for Modules 01–04, including Python fundamentals, data quality auditing, data analysis and visualization, and machine learning fundamentals.
+This repository contains internship projects for Modules 01–05, covering Python fundamentals, data quality auditing, data analysis and visualization, machine learning fundamentals, and a local-first writing pattern analyzer.
 
 ## Task 1 — Introduction to AI & Python
 
@@ -87,6 +87,16 @@ Uses Pandas and NumPy to explore and clean sample sales data, calculate revenue 
 ## Task 4 — Machine Learning Fundamentals
 
 Trains and evaluates a Random Forest classifier on the Iris dataset using Scikit-learn. Includes a train/test split, accuracy, classification report, confusion matrix, and a new-flower prediction. Open `Task-4/Module_04_Machine_Learning_Fundamentals.ipynb` in Google Colab and run all cells.
+
+## Task 5 — HumanCheck: Local Writing Pattern Analyzer
+
+A full-stack, API-key-free prototype with a React frontend and FastAPI backend. It uses a locally running Hugging Face text-classification model when available, plus sentence-level writing-pattern metrics and a clearly labelled heuristic fallback. It reports AI-like and human-like scores, explains visible writing cues, and includes responsible-use limitations.
+
+- **Frontend:** `Task-5/frontend/` — responsive React + Vite application.
+- **Backend:** `Task-5/backend/` — FastAPI API, local model inference, metrics, fallback analysis, and tests.
+- **Run instructions:** See [Task 5 README](Task-5/README.md).
+
+**Important:** These scores are not calibrated probabilities and cannot prove authorship. Do not use them as the sole basis for academic, employment, or disciplinary decisions. The model weights are downloaded and cached locally on first use; no paid inference API key is needed.
 
 ## Key concepts
 
