@@ -25,7 +25,11 @@ It saves entries in a CSV file, so your records remain available when you close 
 - `test_expense_tracker.py` — tests for saving, loading, totals, and input validation.
 - `expenses.csv` — created automatically when you save your first expense.
 
-## How to run it
+## Try the browser demo
+
+The repository also includes a browser-based version in [`docs/index.html`](../docs/index.html). To publish it, open the repository's **Settings → Pages**, choose **Deploy from a branch**, select `main` and the `/docs` folder, then save. After GitHub Pages finishes publishing, the site URL will appear in that Pages settings section. The browser demo runs in the browser and saves entries only in that browser; it does not run the Python script on GitHub.
+
+## How to run the Python version
 
 Make sure Python 3 is installed. Open a terminal in this folder and run:
 
