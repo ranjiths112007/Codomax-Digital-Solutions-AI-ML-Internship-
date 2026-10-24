@@ -2,7 +2,7 @@
 
 ## AI & ML Internship Tasks
 
-This repository contains internship projects for Modules 01–05, covering Python fundamentals, data quality auditing, data analysis and visualization, machine learning fundamentals, and a local-first writing pattern analyzer.
+This repository contains internship projects for Modules 01–06, covering Python fundamentals, data quality auditing, data analysis and visualization, machine learning fundamentals, a local-first writing pattern analyzer, and a local multi-agent data analyst with PowerPoint generation.
 
 **HumanCheck — Task 5 live frontend:** [Open the deployed site](https://ranjiths112007.github.io/Codomax-Digital-Solutions-AI-ML-Internship-/)
 
@@ -48,10 +48,15 @@ This repository contains internship projects for Modules 01–05, covering Pytho
 │   └── Module_03_Data_Analysis_Visualization.ipynb
 ├── Task-4/
 │   └── Module_04_Machine_Learning_Fundamentals.ipynb
-└── Task-5/
+├── Task-5/
     ├── README.md
     ├── backend/
     └── frontend/
+└── Task-6/
+    └── AgenticBI/
+        ├── README.md
+        ├── backend/
+        └── frontend/
 ```
 
 ## Setup and run
@@ -116,6 +121,19 @@ HumanCheck is a full-stack prototype with a React + Vite frontend and a FastAPI 
 - **Deployment:** GitHub Actions builds and deploys the frontend. The backend is not hosted by GitHub Pages and must be deployed separately for hosted text analysis to work. See the Task 5 README for setup and deployment details.
 
 **Responsible use:** The displayed scores are not calibrated probabilities and cannot prove authorship. Human writing can be misclassified, and AI-generated writing can appear human. Do not use the tool as the sole basis for academic, employment, or disciplinary decisions.
+
+## Task 6 — AgenticBI: Local Multi-Agent Analyst & PPT Builder
+
+**[Read Task 6 documentation](Task-6/AgenticBI/README.md)** · **[View Task 6 source](Task-6/AgenticBI/)**
+
+AgenticBI analyses local CSV files, profiles data quality, computes evidence-backed statistics, optionally uses a local Ollama model to phrase findings, detects potential anomalies, and generates a styled PowerPoint report.
+
+- **Backend:** `Task-6/AgenticBI/backend/` — FastAPI, Pandas, Scikit-learn, Ollama integration, and PowerPoint generation.
+- **Frontend:** `Task-6/AgenticBI/frontend/` — React + Vite interface.
+- **Local-first:** no paid inference API is required. Ollama is optional; deterministic analysis works without it.
+- **Safety:** the app does not execute LLM-generated code. Anomaly flags are investigation leads, not proof of fraud or errors.
+
+See the Task 6 README for setup instructions and API endpoints.
 
 ## Key concepts
 
