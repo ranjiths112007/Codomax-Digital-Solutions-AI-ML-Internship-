@@ -1,0 +1,36 @@
+name: Run Expense Tracker
+
+on:
+  push:
+    paths:
+      - "Task-2/**"
+      - ".github/workflows/run-task-2.yml"
+  pull_request:
+    paths:
+      - "Task-2/**"
+      - ".github/workflows/run-task-2.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  run-and-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Task-2
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run the Expense Tracker demo and show output
+        run: python demo_output.py
+
+      - name: Run unit tests
+        run: python -m unittest -v
