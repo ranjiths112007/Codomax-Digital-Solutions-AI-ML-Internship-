@@ -1,0 +1,25 @@
+date,region,service,orders,revenue,delay_minutes
+2026-01-01,North,Battery,120,24000,12
+2026-01-02,South,Towing,98,44100,18
+2026-01-03,East,Flat Tyre,145,21750,8
+2026-01-04,West,Battery,110,22000,15
+2026-01-05,North,Towing,105,47250,21
+2026-01-06,South,Flat Tyre,130,19500,9
+2026-01-07,East,Battery,117,23400,13
+2026-01-08,West,Towing,102,45900,20
+2026-01-09,North,Flat Tyre,138,20700,7
+2026-01-10,South,Battery,125,25000,14
+2026-01-11,East,Towing,99,44550,19
+2026-01-12,West,Flat Tyre,132,19800,10
+2026-01-13,North,Battery,121,24200,11
+2026-01-14,South,Towing,101,45450,22
+2026-01-15,East,Flat Tyre,142,21300,8
+2026-01-16,West,Battery,114,22800,16
+2026-01-17,North,Towing,107,48150,23
+2026-01-18,South,Flat Tyre,128,19200,9
+2026-01-19,East,Battery,119,23800,12
+2026-01-20,West,Towing,104,46800,20
+2026-01-21,North,Flat Tyre,140,21000,8
+2026-01-22,South,Battery,126,25200,15
+2026-01-23,East,Towing,100,45000,19
+2026-01-24,West,Flat Tyre,134,20100,10
