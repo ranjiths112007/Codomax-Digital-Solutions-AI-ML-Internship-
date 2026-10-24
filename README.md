@@ -1,15 +1,24 @@
 # Codomax Digital Solutions — AI & ML Internship
-## Module 01: Introduction to AI & Python (Day 1–Day 4)
+## Module 01: Introduction to AI & Python
 
-This repository contains beginner-friendly notes and Python exercises for Module 01 of the AI & ML internship.
+This repository contains the work for **Task 1: Introduction to AI & Python**, covering the objectives provided for the first module.
 
-## Learning objectives
+## Task 1 — Introduction to AI & Python
 
-- Understand the basics of Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL).
-- Explain how AI, ML, and DL differ and relate to one another.
-- Identify real-world applications of AI.
-- Set up Python and practise variables, data types, conditions, loops, lists, and functions.
-- Write and run small Python programs.
+### Objectives covered
+1. Learn the basics of Artificial Intelligence and Machine Learning.
+2. Understand the difference between AI, ML, and Deep Learning.
+3. Explore real-world AI applications.
+4. Install Python and practise variables, loops, functions, and lists.
+5. Write beginner-friendly Python programs.
+
+### Task contents
+
+- **AI, ML, and Deep Learning notes:** Definitions, differences, relationships, real-world examples, key terms, and review questions.
+- **Python basics:** Variables, data types, operators, type conversion, lists, and functions.
+- **Control flow and collections:** Conditions, `for` and `while` loops, list operations, list comprehensions, and simple calculations.
+- **Beginner Python programs:** Even/odd checker, multiplication table, factorial, palindrome checker, calculator, and list statistics.
+- **Tests:** Basic unit tests for the Day 4 practice programs.
 
 ## Repository structure
 
@@ -17,32 +26,24 @@ This repository contains beginner-friendly notes and Python exercises for Module
 .
 ├── README.md
 ├── requirements.txt
-├── day-01/
-│   └── ai_ml_dl_and_real_world_applications.md
-├── day-02/
-│   └── python_basics.py
-├── day-03/
-│   └── control_flow_and_lists.py
-├── day-04/
-│   └── beginner_programs.py
-└── .gitignore
+├── .gitignore
+└── Task-1/
+    ├── ai_ml_dl_and_real_world_applications.md
+    ├── python_basics.py
+    ├── control_flow_and_lists.py
+    ├── beginner_programs.py
+    └── test_beginner_programs.py
 ```
 
-## Getting started
+## Setup and run
 
 ### 1. Install Python
-Install Python 3.10 or newer from [python.org](https://www.python.org/downloads/). During installation on Windows, enable **Add Python to PATH**.
+Install Python 3.10 or newer from [python.org](https://www.python.org/downloads/). On Windows, enable **Add Python to PATH** during installation.
 
 Check the installation:
 
 ```bash
 python --version
-```
-
-If your system uses the `python3` command:
-
-```bash
-python3 --version
 ```
 
 ### 2. Clone this repository
@@ -55,41 +56,48 @@ cd Codomax-Digital-Solutions-AI-ML-Internship-
 ### 3. Run the programs
 
 ```bash
-python day-02/python_basics.py
-python day-03/control_flow_and_lists.py
-python day-04/beginner_programs.py
+python Task-1/python_basics.py
+python Task-1/control_flow_and_lists.py
+python Task-1/beginner_programs.py
 ```
 
-The examples use Python's standard library, so no third-party packages are required.
+The programs use Python's standard library, so no external packages are required.
 
-## Module summary
+### 4. Run the tests
 
-### AI, ML, and Deep Learning
+From the repository root:
+
+```bash
+python -m unittest discover -s Task-1 -p "test_*.py"
+```
+
+## Key concepts
+
 - **Artificial Intelligence (AI):** The broad field of building systems that perform tasks associated with human intelligence.
-- **Machine Learning (ML):** A subset of AI in which models learn patterns from data to make predictions or decisions.
-- **Deep Learning (DL):** A subset of ML that uses neural networks with multiple layers to learn complex patterns.
+- **Machine Learning (ML):** A subset of AI where models learn patterns from data.
+- **Deep Learning (DL):** A subset of ML that uses neural networks with multiple layers.
 
-A useful way to remember the relationship is: **Deep Learning ⊂ Machine Learning ⊂ Artificial Intelligence**. Not every AI system uses machine learning, and not every ML model uses deep learning.
+In general, **Deep Learning ⊂ Machine Learning ⊂ Artificial Intelligence**. Not every AI system uses machine learning, and not every ML model uses deep learning.
 
-### Real-world applications
-Examples include:
-- Healthcare: supporting image analysis and helping identify patterns in clinical data.
+## Real-world applications
+
+- Healthcare: image analysis support and clinical-data pattern detection.
 - Finance: fraud detection and risk modelling.
 - Transportation: route prediction and driver-assistance systems.
-- Retail: recommendations, demand forecasting, and customer-support chatbots.
-- Agriculture: crop monitoring and disease detection from images.
+- Retail: recommendations and demand forecasting.
+- Agriculture: crop monitoring and possible plant-disease detection.
 - Language: translation, speech recognition, summarisation, and question answering.
 
-These systems can make mistakes. Their outputs need suitable testing, human oversight, and attention to privacy, fairness, and safety.
+AI systems can make mistakes. Their outputs need appropriate testing and human oversight, with attention to privacy, fairness, and safety.
 
-## Practice checklist
+## Task 1 checklist
 
-- [ ] Read the AI/ML/DL notes in `day-01/`.
-- [ ] Run the Python basics examples.
-- [ ] Modify the examples and observe how their output changes.
-- [ ] Run the control-flow and list exercises.
-- [ ] Complete the beginner programs without copying the solution first.
-- [ ] Commit your work to GitHub.
+- [ ] Review the AI, ML, and Deep Learning notes.
+- [ ] Install Python and verify the installation.
+- [ ] Run each Python example.
+- [ ] Modify the examples and understand the output.
+- [ ] Run the unit tests.
+- [ ] Review and commit the completed work.
 
-## Notes
-This is a learning repository for Module 01. Add your own observations, screenshots, and improvements as you complete the tasks.
+---
+**Note:** This repository documents learning exercises for Task 1. Make sure you understand and can explain the code before submitting it.
