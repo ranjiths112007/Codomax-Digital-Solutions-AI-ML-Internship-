@@ -1,7 +1,7 @@
 customer_id,name,email,age
 C001,Ananya,ananya@example.com,24
 C002,Rahul,rahul.example.com,29
-C003,,kavi@example.com,21
+C003,kavi,kavi@example.com,21
 C004,Meera,meera@example.com,abc
 C004,Meera,meera@example.com,abc
 C006,Arun,arun@example.com,135
