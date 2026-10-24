@@ -1,5 +1,5 @@
 # Codomax Digital Solutions — AI & ML Internship
-## Module 01: Introduction to AI & Python
+## AI & ML Internship Tasks
 
 This repository contains the work for **Task 1: Introduction to AI & Python**, covering the objectives provided for the first module.
 
@@ -27,12 +27,17 @@ This repository contains the work for **Task 1: Introduction to AI & Python**, c
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-└── Task-1/
-    ├── ai_ml_dl_and_real_world_applications.md
-    ├── python_basics.py
-    ├── control_flow_and_lists.py
-    ├── beginner_programs.py
-    └── test_beginner_programs.py
+├── Task-1/
+│   ├── README.md
+│   ├── ai_ml_dl_and_real_world_applications.md
+│   ├── python_basics.py
+│   ├── control_flow_and_lists.py
+│   ├── beginner_programs.py
+│   └── test_beginner_programs.py
+└── Task-2/
+    ├── README.md
+    ├── expense_tracker.py
+    └── test_expense_tracker.py
 ```
 
 ## Setup and run
